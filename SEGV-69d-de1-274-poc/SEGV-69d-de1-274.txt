@@ -1,0 +1,27 @@
+arw 00000000000000000000000000000000000000000000000000000000000000000000000000000000101c00000000000000000000000000000000000000000000
+ASAN:DEADLYSIGNAL
+=================================================================
+==68948==ERROR: AddressSanitizer: SEGV on unknown address 0x603f8002afdf (pc 0x7f7819278487 bp 0x7ffd3d8913e0 sp 0x7ffd3d891300 T0)
+    #0 0x7f7819278486 in d_unqualified_name /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:1520
+    #1 0x7f7819278868 in d_prefix /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:1423
+    #2 0x7f7819277774 in d_nested_name /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:1360
+    #3 0x7f7819276308 in d_name /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:1270
+    #4 0x7f781926182d in d_encoding /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:1189
+    #5 0x7f78192612dd in cplus_demangle_mangled_name /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:1104
+    #6 0x7f781927432d in d_demangle_callback /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:5524
+    #7 0x7f78192738a4 in d_demangle /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:5573
+    #8 0x7f781927370f in cplus_demangle_v3 /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:5730
+    #9 0x7f781924e01e in r_bin_demangle_cxx /home/test/tmp/radare2/libr/bin/demangle.c:147
+    #10 0x7f78192508a9 in r_bin_demangle /home/test/tmp/radare2/libr/bin/demangle.c:474
+    #11 0x7f781a4b6d38 in bin_imports /home/test/tmp/radare2/libr/core/cbin.c:1423
+    #12 0x7f781a4aafd8 in r_core_bin_info /home/test/tmp/radare2/libr/core/cbin.c:2716
+    #13 0x7f781a4aacb2 in r_core_bin_set_env /home/test/tmp/radare2/libr/core/cbin.c:109
+    #14 0x7f781a435c6b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:434
+    #15 0x7f781a432e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #16 0x55d74e0fb408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #17 0x7f781336882f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #18 0x55d74e026f38 in _start ??:?
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (//home/test/tmp/radare2/libr/bin/libr_bin.so+0x103486)
+==68948==ABORTING

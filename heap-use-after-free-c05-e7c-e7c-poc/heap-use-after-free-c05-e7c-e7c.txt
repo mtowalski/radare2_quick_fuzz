@@ -1,0 +1,105 @@
+Warning: Invalid import directory size: 0xffff is now 0xa6c
+=================================================================
+==68894==ERROR: AddressSanitizer: heap-use-after-free on address 0x6040000142d8 at pc 0x7f1cbb194963 bp 0x7ffdb25ca400 sp 0x7ffdb25ca3f8
+WRITE of size 8 at 0x6040000142d8 thread T0
+    #0 0x7f1cbb194962 in r_asn1_free_object /home/test/tmp/radare2/libr/util/r_asn1.c:444
+    #1 0x7f1cbb194b48 in r_asn1_free_object /home/test/tmp/radare2/libr/util/r_asn1.c:448
+    #2 0x7f1cbb194b48 in r_asn1_free_object /home/test/tmp/radare2/libr/util/r_asn1.c:448
+    #3 0x7f1cbb194b48 in r_asn1_free_object /home/test/tmp/radare2/libr/util/r_asn1.c:448
+    #4 0x7f1cbb194b48 in r_asn1_free_object /home/test/tmp/radare2/libr/util/r_asn1.c:448
+    #5 0x7f1cbb184ff9 in r_pkcs7_parse_cms /home/test/tmp/radare2/libr/util/r_pkcs7.c:304
+    #6 0x7f1cc0193b02 in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1922
+    #7 0x7f1cc01869bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #8 0x7f1cc0186d79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #9 0x7f1cc016885e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #10 0x7f1cbffc9f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #11 0x7f1cbffc845d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #12 0x7f1cbffc79fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #13 0x7f1cbffc4da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #14 0x7f1cbffc4b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #15 0x7f1cc11c6c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #16 0x7f1cc11c3e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #17 0x559347b10408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #18 0x7f1cba0f982f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #19 0x559347a3bf38 in _start ??:?
+
+0x6040000142d8 is located 8 bytes inside of 40-byte region [0x6040000142d0,0x6040000142f8)
+freed by thread T0 here:
+    #0 0x559347adbf10 in __interceptor_cfree.localalias.0 asan_malloc_linux.cc.o:?
+    #1 0x7f1cbb194c62 in r_asn1_free_object /home/test/tmp/radare2/libr/util/r_asn1.c:455
+    #2 0x7f1cbb18bd9c in r_x509_parse_certificate /home/test/tmp/radare2/libr/util/r_x509.c:247
+    #3 0x7f1cbb181a19 in r_pkcs7_parse_extendedcertificatesandcertificates /home/test/tmp/radare2/libr/util/r_pkcs7.c:52
+    #4 0x7f1cbb18481a in r_pkcs7_parse_signeddata /home/test/tmp/radare2/libr/util/r_pkcs7.c:263
+    #5 0x7f1cbb184fea in r_pkcs7_parse_cms /home/test/tmp/radare2/libr/util/r_pkcs7.c:303
+    #6 0x7f1cc0193b02 in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1922
+    #7 0x7f1cc01869bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #8 0x7f1cc0186d79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #9 0x7f1cc016885e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #10 0x7f1cbffc9f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #11 0x7f1cbffc845d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #12 0x7f1cbffc79fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #13 0x7f1cbffc4da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #14 0x7f1cbffc4b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #15 0x7f1cc11c6c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #16 0x7f1cc11c3e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #17 0x559347b10408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #18 0x7f1cba0f982f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+previously allocated by thread T0 here:
+    #0 0x559347adc098 in malloc ??:?
+    #1 0x7f1cbb19367f in asn1_parse_header /home/test/tmp/radare2/libr/util/r_asn1.c:310
+    #2 0x7f1cbb19425d in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:404
+    #3 0x7f1cbb194716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #4 0x7f1cbb194716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #5 0x7f1cbb194716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #6 0x7f1cbb194716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #7 0x7f1cbb184c20 in r_pkcs7_parse_cms /home/test/tmp/radare2/libr/util/r_pkcs7.c:297
+    #8 0x7f1cc0193b02 in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1922
+    #9 0x7f1cc01869bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #10 0x7f1cc0186d79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #11 0x7f1cc016885e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #12 0x7f1cbffc9f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #13 0x7f1cbffc845d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #14 0x7f1cbffc79fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #15 0x7f1cbffc4da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #16 0x7f1cbffc4b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #17 0x7f1cc11c6c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #18 0x7f1cc11c3e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #19 0x559347b10408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #20 0x7f1cba0f982f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-use-after-free (//home/test/tmp/radare2/libr/util/libr_util.so+0x1ab962)
+Shadow bytes around the buggy address:
+  0x0c087fffa800: fa fa fd fd fd fd fd fa fa fa fd fd fd fd fd fa
+  0x0c087fffa810: fa fa fd fd fd fd fd fa fa fa fd fd fd fd fd fa
+  0x0c087fffa820: fa fa fd fd fd fd fd fa fa fa fd fd fd fd fd fa
+  0x0c087fffa830: fa fa fd fd fd fd fd fa fa fa fd fd fd fd fd fa
+  0x0c087fffa840: fa fa fd fd fd fd fd fa fa fa fd fd fd fd fd fa
+=>0x0c087fffa850: fa fa fd fd fd fd fd fa fa fa fd[fd]fd fd fd fa
+  0x0c087fffa860: fa fa fd fd fd fd fd fa fa fa 00 00 00 00 00 fa
+  0x0c087fffa870: fa fa fd fd fd fd fd fa fa fa 00 00 00 00 00 fa
+  0x0c087fffa880: fa fa 00 00 00 00 00 fa fa fa 00 00 00 00 00 fa
+  0x0c087fffa890: fa fa fd fd fd fd fd fa fa fa fd fd fd fd fd fa
+  0x0c087fffa8a0: fa fa 00 00 00 00 00 fa fa fa fd fd fd fd fd fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68894==ABORTING

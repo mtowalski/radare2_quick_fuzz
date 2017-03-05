@@ -1,0 +1,23 @@
+Warning: Invalid import directory size: 0xffff is now 0xa99
+ASAN:DEADLYSIGNAL
+=================================================================
+==68995==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000008 (pc 0x7f3d45375da9 bp 0x7ffdd1af1e80 sp 0x7ffdd1af1ce0 T0)
+    #0 0x7f3d45375da8 in r_pkcs7_cms_dump /home/test/tmp/radare2/libr/util/r_pkcs7.c:551
+    #1 0x7f3d4a382b0f in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1923
+    #2 0x7f3d4a3759bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #3 0x7f3d4a375d79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #4 0x7f3d4a35785e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #5 0x7f3d4a1b8f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #6 0x7f3d4a1b745d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #7 0x7f3d4a1b69fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #8 0x7f3d4a1b3da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #9 0x7f3d4a1b3b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #10 0x7f3d4b3b5c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #11 0x7f3d4b3b2e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #12 0x55eee14bc408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #13 0x7f3d442e882f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #14 0x55eee13e7f38 in _start ??:?
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (//home/test/tmp/radare2/libr/util/libr_util.so+0x19dda8)
+==68995==ABORTING

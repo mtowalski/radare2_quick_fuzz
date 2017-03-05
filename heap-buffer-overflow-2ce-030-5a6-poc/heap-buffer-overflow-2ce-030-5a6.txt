@@ -1,0 +1,310 @@
+Warning: Invalid import directory size: 0xffff is now 0xa73
+=================================================================
+==68675==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x61d00001f300 at pc 0x7f46b22086db bp 0x7ffd637f8380 sp 0x7ffd637f8378
+READ of size 1 at 0x61d00001f300 thread T0
+    #0 0x7f46b22086da in asn1_parse_header /home/test/tmp/radare2/libr/util/r_asn1.c:314
+    #1 0x7f46b2209101 in r_asn1_count_objects /home/test/tmp/radare2/libr/util/r_asn1.c:387
+    #2 0x7f46b22094be in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:410
+    #3 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #4 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #5 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #6 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #7 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #8 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #9 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #10 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #11 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #12 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #13 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #14 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #15 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #16 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #17 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #18 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #19 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #20 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #21 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #22 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #23 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #24 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #25 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #26 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #27 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #28 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #29 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #30 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #31 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #32 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #33 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #34 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #35 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #36 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #37 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #38 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #39 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #40 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #41 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #42 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #43 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #44 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #45 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #46 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #47 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #48 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #49 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #50 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #51 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #52 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #53 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #54 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #55 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #56 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #57 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #58 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #59 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #60 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #61 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #62 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #63 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #64 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #65 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #66 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #67 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #68 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #69 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #70 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #71 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #72 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #73 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #74 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #75 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #76 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #77 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #78 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #79 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #80 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #81 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #82 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #83 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #84 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #85 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #86 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #87 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #88 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #89 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #90 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #91 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #92 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #93 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #94 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #95 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #96 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #97 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #98 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #99 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #100 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #101 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #102 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #103 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #104 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #105 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #106 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #107 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #108 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #109 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #110 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #111 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #112 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #113 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #114 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #115 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #116 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #117 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #118 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #119 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #120 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #121 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #122 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #123 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #124 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #125 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #126 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #127 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #128 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #129 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #130 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #131 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #132 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #133 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #134 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #135 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #136 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #137 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #138 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #139 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #140 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #141 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #142 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #143 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #144 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #145 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #146 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #147 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #148 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #149 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #150 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #151 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #152 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #153 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #154 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #155 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #156 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #157 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #158 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #159 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #160 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #161 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #162 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #163 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #164 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #165 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #166 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #167 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #168 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #169 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #170 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #171 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #172 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #173 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #174 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #175 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #176 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #177 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #178 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #179 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #180 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #181 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #182 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #183 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #184 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #185 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #186 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #187 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #188 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #189 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #190 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #191 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #192 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #193 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #194 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #195 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #196 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #197 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #198 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #199 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #200 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #201 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #202 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #203 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #204 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #205 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #206 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #207 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #208 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #209 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #210 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #211 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #212 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #213 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #214 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #215 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #216 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #217 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #218 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #219 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #220 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #221 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #222 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #223 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #224 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #225 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #226 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #227 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #228 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #229 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #230 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #231 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #232 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #233 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #234 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #235 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #236 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #237 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #238 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #239 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #240 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #241 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #242 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #243 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #244 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #245 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #246 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #247 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #248 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #249 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #250 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #251 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #252 0x7f46b2209716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+
+0x61d00001f300 is located 0 bytes to the right of 2176-byte region [0x61d00001ea80,0x61d00001f300)
+allocated by thread T0 here:
+    #0 0x556e2f7b9220 in calloc ??:?
+    #1 0x7f46b72088b5 in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1907
+    #2 0x7f46b71fb9bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #3 0x7f46b71fbd79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #4 0x7f46b71dd85e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #5 0x7f46b703ef82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #6 0x7f46b703d45d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #7 0x7f46b703c9fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #8 0x7f46b7039da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #9 0x7f46b7039b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #10 0x7f46b823bc0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #11 0x7f46b8238e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #12 0x556e2f7ed408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #13 0x7f46b116e82f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (//home/test/tmp/radare2/libr/util/libr_util.so+0x1aa6da)
+Shadow bytes around the buggy address:
+  0x0c3a7fffbe10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c3a7fffbe20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c3a7fffbe30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c3a7fffbe40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c3a7fffbe50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c3a7fffbe60:[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c3a7fffbe70: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c3a7fffbe80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c3a7fffbe90: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c3a7fffbea0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c3a7fffbeb0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68675==ABORTING

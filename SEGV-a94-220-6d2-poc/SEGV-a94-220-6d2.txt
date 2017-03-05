@@ -1,0 +1,28 @@
+Warning: Invalid import directory size: 0xffff is now 0xa5b
+ASAN:DEADLYSIGNAL
+=================================================================
+==68987==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7f40ae9de2ad bp 0x7fff50c78fa0 sp 0x7fff50c78ce0 T0)
+    #0 0x7f40ae9de2ac in r_x509_parse_name /home/test/tmp/radare2/libr/util/r_x509.c:113
+    #1 0x7f40ae9d7a32 in r_pkcs7_parse_issuerandserialnumber /home/test/tmp/radare2/libr/util/r_pkcs7.c:143
+    #2 0x7f40ae9d7da8 in r_pkcs7_parse_signerinfo /home/test/tmp/radare2/libr/util/r_pkcs7.c:174
+    #3 0x7f40ae9d9103 in r_pkcs7_parse_signerinfos /home/test/tmp/radare2/libr/util/r_pkcs7.c:227
+    #4 0x7f40ae9d9b1b in r_pkcs7_parse_signeddata /home/test/tmp/radare2/libr/util/r_pkcs7.c:272
+    #5 0x7f40ae9d9fea in r_pkcs7_parse_cms /home/test/tmp/radare2/libr/util/r_pkcs7.c:303
+    #6 0x7f40b39e8b02 in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1922
+    #7 0x7f40b39db9bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #8 0x7f40b39dbd79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #9 0x7f40b39bd85e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #10 0x7f40b381ef82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #11 0x7f40b381d45d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #12 0x7f40b381c9fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #13 0x7f40b3819da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #14 0x7f40b3819b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #15 0x7f40b4a1bc0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #16 0x7f40b4a18e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #17 0x563b7ce35408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #18 0x7f40ad94e82f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #19 0x563b7cd60f38 in _start ??:?
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (//home/test/tmp/radare2/libr/util/libr_util.so+0x1a02ac)
+==68987==ABORTING

@@ -1,0 +1,63 @@
+=================================================================
+==68862==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x603000026a27 at pc 0x56251e7cdc8f bp 0x7ffebe17a3d0 sp 0x7ffebe179b80
+READ of size 3 at 0x603000026a27 thread T0
+    #0 0x56251e7cdc8e in __interceptor_strncmp.part.67 asan_interceptors.cc.o:?
+    #1 0x7f041a7e6450 in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_vsf.c:51 (discriminator 1)
+    #2 0x7f041a5e4f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #3 0x7f041a5e345d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #4 0x7f041a5e29fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #5 0x7f041a5dfda7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #6 0x7f041a5dfb51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #7 0x7f041b7e1c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #8 0x7f041b7dee07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #9 0x56251e87d408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #10 0x7f041471482f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #11 0x56251e7a8f38 in _start ??:?
+
+0x603000026a27 is located 0 bytes to the right of 23-byte region [0x603000026a10,0x603000026a27)
+allocated by thread T0 here:
+    #0 0x56251e849098 in malloc ??:?
+    #1 0x7f041880568d in r_io_desc_read /home/test/tmp/radare2/libr/io/io.c:1084
+    #2 0x7f041a5e1b93 in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:900
+    #3 0x7f041a5dfda7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #4 0x7f041a5dfb51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #5 0x7f041b7e1c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #6 0x7f041b7dee07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #7 0x56251e87d408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #8 0x7f041471482f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/test/tmp/radare2/binr/radare2/radare2+0x44c8e)
+Shadow bytes around the buggy address:
+  0x0c067fffccf0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fffcd00: 00 00 00 fa fa fa 00 00 00 fa fa fa 00 00 00 fa
+  0x0c067fffcd10: fa fa 00 00 00 fa fa fa 00 00 00 fa fa fa 00 00
+  0x0c067fffcd20: 00 fa fa fa 00 00 00 fa fa fa 00 00 00 fa fa fa
+  0x0c067fffcd30: 00 00 00 00 fa fa 00 00 00 00 fa fa fd fd fd fd
+=>0x0c067fffcd40: fa fa 00 00[07]fa fa fa 00 00 00 fa fa fa 00 00
+  0x0c067fffcd50: 00 fa fa fa 00 00 00 00 fa fa fd fd fd fa fa fa
+  0x0c067fffcd60: fd fd fd fa fa fa 00 00 00 fa fa fa 00 00 00 00
+  0x0c067fffcd70: fa fa fd fd fd fa fa fa fd fd fd fa fa fa fd fd
+  0x0c067fffcd80: fd fa fa fa fd fd fd fa fa fa fd fd fd fa fa fa
+  0x0c067fffcd90: fd fd fd fa fa fa 00 00 00 fa fa fa 00 00 00 fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68862==ABORTING

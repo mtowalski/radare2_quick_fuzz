@@ -1,0 +1,75 @@
+=================================================================
+==68683==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6060000133e0 at pc 0x7fd91eaad3f2 bp 0x7ffda560a5b0 sp 0x7ffda560a5a8
+READ of size 1 at 0x6060000133e0 thread T0
+    #0 0x7fd91eaad3f1 in r_bin_demangle_rust /home/test/tmp/radare2/libr/bin/demangle.c:334
+    #1 0x7fd91eaae7f6 in r_bin_demangle /home/test/tmp/radare2/libr/bin/demangle.c:471
+    #2 0x7fd91fd2361c in snInit /home/test/tmp/radare2/libr/core/cbin.c:1542
+    #3 0x7fd91fd203fb in bin_symbols_internal /home/test/tmp/radare2/libr/core/cbin.c:1621
+    #4 0x7fd91fd156c4 in bin_symbols /home/test/tmp/radare2/libr/core/cbin.c:1814
+    #5 0x7fd91fd0903a in r_core_bin_info /home/test/tmp/radare2/libr/core/cbin.c:2718
+    #6 0x7fd91fd08cb2 in r_core_bin_set_env /home/test/tmp/radare2/libr/core/cbin.c:109
+    #7 0x7fd91fc93c6b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:434
+    #8 0x7fd91fc90e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #9 0x55757745d408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #10 0x7fd918bc682f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #11 0x557577388f38 in _start ??:?
+
+0x6060000133e0 is located 0 bytes to the right of 64-byte region [0x6060000133a0,0x6060000133e0)
+allocated by thread T0 here:
+    #0 0x557577429418 in realloc ??:?
+    #1 0x7fd91eadaaf6 in d_growable_string_resize /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:3603
+    #2 0x7fd91eadad71 in d_growable_string_append_buffer /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:3627
+    #3 0x7fd91ead122c in d_growable_string_callback_adapter /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:3644
+    #4 0x7fd91ead0b41 in d_print_flush /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:3710
+    #5 0x7fd91eac7d0a in cplus_demangle_print_callback /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:3778
+    #6 0x7fd91ead2526 in d_demangle_callback /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:5551
+    #7 0x7fd91ead18a4 in d_demangle /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:5573
+    #8 0x7fd91ead170f in cplus_demangle_v3 /home/test/tmp/radare2/libr/bin/mangling/cxx/cp-demangle.c:5730
+    #9 0x7fd91eaac01e in r_bin_demangle_cxx /home/test/tmp/radare2/libr/bin/demangle.c:147
+    #10 0x7fd91eaad1d1 in r_bin_demangle_rust /home/test/tmp/radare2/libr/bin/demangle.c:319
+    #11 0x7fd91eaae7f6 in r_bin_demangle /home/test/tmp/radare2/libr/bin/demangle.c:471
+    #12 0x7fd91fd2361c in snInit /home/test/tmp/radare2/libr/core/cbin.c:1542
+    #13 0x7fd91fd203fb in bin_symbols_internal /home/test/tmp/radare2/libr/core/cbin.c:1621
+    #14 0x7fd91fd156c4 in bin_symbols /home/test/tmp/radare2/libr/core/cbin.c:1814
+    #15 0x7fd91fd0903a in r_core_bin_info /home/test/tmp/radare2/libr/core/cbin.c:2718
+    #16 0x7fd91fd08cb2 in r_core_bin_set_env /home/test/tmp/radare2/libr/core/cbin.c:109
+    #17 0x7fd91fc93c6b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:434
+    #18 0x7fd91fc90e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #19 0x55757745d408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #20 0x7fd918bc682f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (//home/test/tmp/radare2/libr/bin/libr_bin.so+0xda3f1)
+Shadow bytes around the buggy address:
+  0x0c0c7fffa620: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fffa630: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fffa640: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fffa650: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c0c7fffa660: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+=>0x0c0c7fffa670: fa fa fa fa 00 00 00 00 00 00 00 00[fa]fa fa fa
+  0x0c0c7fffa680: 00 00 00 00 00 00 00 00 fa fa fa fa 00 00 00 00
+  0x0c0c7fffa690: 00 00 00 00 fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c0c7fffa6a0: fa fa fa fa 00 00 00 00 00 00 00 00 fa fa fa fa
+  0x0c0c7fffa6b0: 00 00 00 00 00 00 00 00 fa fa fa fa 00 00 00 00
+  0x0c0c7fffa6c0: 00 00 00 00 fa fa fa fa fd fd fd fd fd fd fd fd
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68683==ABORTING

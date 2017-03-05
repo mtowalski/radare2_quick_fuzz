@@ -1,0 +1,62 @@
+# adler32 checksum doesn't match. Type this to fix it:
+wx `#sha1 $s-32 @32` @12 ; wx `#adler32 $s-12 @12` @8
+=================================================================
+==69026==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7fff6396ad26 at pc 0x7fd4c9924b9c bp 0x7fff6396ac70 sp 0x7fff6396ac68
+READ of size 1 at 0x7fff6396ad26 thread T0
+    #0 0x7fd4c9924b9b in dex_uleb128_len /home/test/tmp/radare2/libr/..//libr/bin/p/../format/dex/dex.c:246
+    #1 0x7fd4c99249c4 in dex_read_uleb128 /home/test/tmp/radare2/libr/..//libr/bin/p/../format/dex/dex.c:225
+    #2 0x7fd4c9903822 in strings /home/test/tmp/radare2/libr/..//libr/bin/p/bin_dex.c:783
+    #3 0x7fd4c98a6493 in r_bin_object_set_items /home/test/tmp/radare2/libr/bin/bin.c:667
+    #4 0x7fd4c98954df in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1240
+    #5 0x7fd4c989345d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #6 0x7fd4c98929fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #7 0x7fd4c988fda7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #8 0x7fd4c988fb51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #9 0x7fd4caa91c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #10 0x7fd4caa8ee07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #11 0x559f12f63408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #12 0x7fd4c39c482f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #13 0x559f12e8ef38 in _start ??:?
+
+Address 0x7fff6396ad26 is located in stack of thread T0 at offset 38 in frame
+    #0 0x7fd4c9902b3f in strings /home/test/tmp/radare2/libr/..//libr/bin/p/bin_dex.c:754
+
+  This frame has 1 object(s):
+    [32, 38) 'buf' <== Memory access at offset 38 overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow (//home/test/tmp/radare2/libr/bin/libr_bin.so+0x153b9b)
+Shadow bytes around the buggy address:
+  0x10006c725550: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10006c725560: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10006c725570: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10006c725580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10006c725590: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x10006c7255a0: f1 f1 f1 f1[06]f3 f3 f3 00 00 00 00 00 00 00 00
+  0x10006c7255b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10006c7255c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10006c7255d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10006c7255e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10006c7255f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==69026==ABORTING

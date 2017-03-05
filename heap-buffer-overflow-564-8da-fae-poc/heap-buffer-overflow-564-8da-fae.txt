@@ -1,0 +1,90 @@
+Warning: Invalid import directory size: 0x4b is now 0x0
+Warning: read (resource directory)
+Metadata Signature: 0xe1c 0x10001424a53422a 3072
+.NET Version:
+Number of Metadata Streams: 17664
+DirectoryAddress: 7602 Size: b3008800
+Stream name:  4
+DirectoryAddress: c403 Size: 6046300
+Stream name:  4
+DirectoryAddress: 10b04 Size: 10047300
+Stream name:  4
+DirectoryAddress: 12d04 Size: 32050b00
+Stream name:  4
+DirectoryAddress: 14d05 Size: 4d05a600
+Stream name:  4
+DirectoryAddress: 2000300 Size: 5000700
+Stream name:  4
+DirectoryAddress: 2000700 Size: 9000900
+Stream name:  4
+DirectoryAddress: 0 Size: 0
+=================================================================
+==68705==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x62300000c38c at pc 0x7f0a23993cf7 bp 0x7ffe00e8f210 sp 0x7ffe00e8f208
+READ of size 1 at 0x62300000c38c thread T0
+    #0 0x7f0a23993cf6 in bin_pe_read_metadata_string /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:653
+    #1 0x7f0a239932eb in bin_pe_init_metadata_hdr /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:758
+    #2 0x7f0a23984a54 in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1968
+    #3 0x7f0a23984d79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #4 0x7f0a2396685e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #5 0x7f0a237c7f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #6 0x7f0a237c645d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #7 0x7f0a237c59fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #8 0x7f0a237c2da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #9 0x7f0a237c2b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #10 0x7f0a249c4c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #11 0x7f0a249c1e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #12 0x55d1d288f408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #13 0x7f0a1d8f782f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #14 0x55d1d27baf38 in _start ??:?
+
+0x62300000c38c is located 3 bytes to the right of 6793-byte region [0x62300000a900,0x62300000c389)
+allocated by thread T0 here:
+    #0 0x55d1d285b098 in malloc ??:?
+    #1 0x7f0a1e8f0e9f in r_buf_set_bytes /home/test/tmp/radare2/libr/util/buf.c:289
+    #2 0x7f0a23984d55 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2976
+    #3 0x7f0a2396685e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #4 0x7f0a237c7f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #5 0x7f0a237c645d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #6 0x7f0a237c59fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #7 0x7f0a237c2da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #8 0x7f0a237c2b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #9 0x7f0a249c4c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #10 0x7f0a249c1e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #11 0x55d1d288f408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #12 0x7f0a1d8f782f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (//home/test/tmp/radare2/libr/bin/libr_bin.so+0x28fcf6)
+Shadow bytes around the buggy address:
+  0x0c467fff9820: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c467fff9830: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c467fff9840: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c467fff9850: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c467fff9860: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c467fff9870: 00[01]fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c467fff9880: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c467fff9890: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c467fff98a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c467fff98b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c467fff98c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68705==ABORTING

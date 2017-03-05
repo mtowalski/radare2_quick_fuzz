@@ -1,0 +1,29 @@
+asm.arch: cannot find (ext2)
+anal.arch: cannot find 'ext2'
+asm.arch: cannot find (ext2)
+ASAN:DEADLYSIGNAL
+=================================================================
+==68668==ERROR: AddressSanitizer: FPE on unknown address 0x7f6fe6ff6637 (pc 0x7f6fe6ff6637 bp 0x7ffc5f056c90 sp 0x7ffc5f056a80 T0)
+    #0 0x7f6fe6ff6636 in grub_ext2_read_inode /home/test/tmp/radare2/shlr/grub/fs/ext2.c:526
+    #1 0x7f6fe6ff451a in grub_ext2_mount /home/test/tmp/radare2/shlr/grub/fs/ext2.c:585
+    #2 0x7f6fe6ff2bfc in grub_ext2_dir /home/test/tmp/radare2/shlr/grub/fs/ext2.c:851
+    #3 0x7f6fe6fd4c27 in ext2__mount /home/test/tmp/radare2/libr/fs/p/fs_grub_base.c:74
+    #4 0x7f6fe6fe2561 in r_fs_mount /home/test/tmp/radare2/libr/fs/fs.c:151
+    #5 0x7f6fea1ad914 in cmd_mount /home/test/tmp/radare2/libr/core/./cmd_mount.c:49
+    #6 0x7f6fea36d587 in r_cmd_call /home/test/tmp/radare2/libr/core/cmd_api.c:226
+    #7 0x7f6fea2180ba in r_core_cmd_subst_i /home/test/tmp/radare2/libr/core/cmd.c:2066 (discriminator 4)
+    #8 0x7f6fea1aaa29 in r_core_cmd_subst /home/test/tmp/radare2/libr/core/cmd.c:1341
+    #9 0x7f6fea1a4c30 in r_core_cmd /home/test/tmp/radare2/libr/core/cmd.c:2622
+    #10 0x7f6fea1907fa in r_core_cmdf /home/test/tmp/radare2/libr/core/cmd.c:2762
+    #11 0x7f6fea342493 in bin_info /home/test/tmp/radare2/libr/core/cbin.c:611
+    #12 0x7f6fea33fec0 in r_core_bin_info /home/test/tmp/radare2/libr/core/cbin.c:2709
+    #13 0x7f6fea33fcb2 in r_core_bin_set_env /home/test/tmp/radare2/libr/core/cbin.c:109
+    #14 0x7f6fea2cac6b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:434
+    #15 0x7f6fea2c7e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #16 0x55b686d9d408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #17 0x7f6fe31fd82f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #18 0x55b686cc8f38 in _start ??:?
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: FPE (//home/test/tmp/radare2/libr/fs/libr_fs.so+0x39636)
+==68668==ABORTING

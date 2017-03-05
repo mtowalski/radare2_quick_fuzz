@@ -1,0 +1,56 @@
+=================================================================
+==68653==ERROR: AddressSanitizer: dynamic-stack-buffer-overflow on address 0x7ffc4f6417d4 at pc 0x7f3193477d2e bp 0x7ffc4f63e390 sp 0x7ffc4f63e388
+WRITE of size 8 at 0x7ffc4f6417d4 thread T0
+    #0 0x7f3193477d2d in dex_parse_debug_item /home/test/tmp/radare2/libr/..//libr/bin/p/bin_dex.c:332
+    #1 0x7f3193477234 in parse_dex_class_method /home/test/tmp/radare2/libr/..//libr/bin/p/bin_dex.c:1258
+    #2 0x7f319346f866 in parse_class /home/test/tmp/radare2/libr/..//libr/bin/p/bin_dex.c:1390
+    #3 0x7f319346b817 in dex_loadcode /home/test/tmp/radare2/libr/..//libr/bin/p/bin_dex.c:1486
+    #4 0x7f3193462577 in entries /home/test/tmp/radare2/libr/..//libr/bin/p/bin_dex.c:1613
+    #5 0x7f3193406fba in r_bin_object_set_items /home/test/tmp/radare2/libr/bin/bin.c:617
+    #6 0x7f31933f74df in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1240
+    #7 0x7f31933f545d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #8 0x7f31933f49fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #9 0x7f31933f1da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #10 0x7f31933f1b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #11 0x7f31945f3c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #12 0x7f31945f0e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #13 0x557e75176408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #14 0x7f318d52682f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #15 0x557e750a1f38 in _start ??:?
+
+Address 0x7ffc4f6417d4 is located in stack of thread T0
+SUMMARY: AddressSanitizer: dynamic-stack-buffer-overflow (//home/test/tmp/radare2/libr/bin/libr_bin.so+0x144d2d)
+Shadow bytes around the buggy address:
+  0x100009ec02a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100009ec02b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100009ec02c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100009ec02d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100009ec02e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x100009ec02f0: 00 00 00 00 00 00 00 00 00 00[04]cb cb cb cb cb
+  0x100009ec0300: f1 f1 f1 f1 00 f2 f2 f2 00 f2 f2 f2 00 f2 f2 f2
+  0x100009ec0310: 00 f2 f2 f2 00 f2 f2 f2 00 f2 f2 f2 00 f2 f2 f2
+  0x100009ec0320: 00 f2 f2 f2 00 f2 f2 f2 00 f2 f2 f2 00 f2 f2 f2
+  0x100009ec0330: 00 f2 f2 f2 00 f2 f2 f2 00 f2 f2 f2 00 f2 f2 f2
+  0x100009ec0340: 00 00 00 00 00 00 00 00 f3 f3 f3 f3 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68653==ABORTING

@@ -1,0 +1,73 @@
+Warning: mach0_header 3 = cmdsize<1.
+=================================================================
+==68698==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x619000019e38 at pc 0x56350149ed06 bp 0x7fff8f2a7b60 sp 0x7fff8f2a7310
+READ of size 189 at 0x619000019e38 thread T0
+    #0 0x56350149ed05 in _ZL13printf_commonPvPKcP13__va_list_tag asan_interceptors.cc.o:?
+    #1 0x56350149e602 in _ZL13printf_commonPvPKcP13__va_list_tag asan_interceptors.cc.o:?
+    #2 0x5635014a0c7d in vsnprintf ??:?
+    #3 0x5635014a1000 in snprintf ??:?
+    #4 0x7fad500ab514 in get_sections /home/test/tmp/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:1312
+    #5 0x7fad500a28e4 in sections /home/test/tmp/radare2/libr/..//libr/bin/p/bin_mach0.c:140
+    #6 0x7fad500a1b5a in size /home/test/tmp/radare2/libr/..//libr/bin/p/bin_mach0.c:740
+    #7 0x7fad4ffa5cd8 in r_bin_object_set_items /home/test/tmp/radare2/libr/bin/bin.c:606
+    #8 0x7fad4ff964df in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1240
+    #9 0x7fad4ff94f36 in r_bin_file_object_new_from_xtr_data /home/test/tmp/radare2/libr/bin/bin.c:1351
+    #10 0x7fad4ff9b9d0 in r_bin_use_arch /home/test/tmp/radare2/libr/bin/bin.c:1920
+    #11 0x7fad51217a9d in r_core_bin_set_arch_bits /home/test/tmp/radare2/libr/core/cbin.c:2762
+    #12 0x7fad51217e52 in r_core_bin_update_arch_bits /home/test/tmp/radare2/libr/core/cbin.c:2787
+    #13 0x56350152be9d in main /home/test/tmp/radare2/binr/radare2/radare2.c:1007
+    #14 0x7fad4a0c582f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #15 0x563501456f38 in _start ??:?
+
+0x619000019e38 is located 0 bytes to the right of 952-byte region [0x619000019a80,0x619000019e38)
+allocated by thread T0 here:
+    #0 0x5635014f7418 in realloc ??:?
+    #1 0x7fad500c2346 in parse_segments /home/test/tmp/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:254
+    #2 0x7fad500bbd62 in init_items /home/test/tmp/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:932
+    #3 0x7fad500a9ef9 in init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:1181
+    #4 0x7fad500aa316 in new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:1247
+    #5 0x7fad500a1a4e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_mach0.c:44
+    #6 0x7fad500a1674 in load /home/test/tmp/radare2/libr/..//libr/bin/p/bin_mach0.c:60
+    #7 0x7fad4ff962b1 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1220
+    #8 0x7fad4ff94f36 in r_bin_file_object_new_from_xtr_data /home/test/tmp/radare2/libr/bin/bin.c:1351
+    #9 0x7fad4ff9b9d0 in r_bin_use_arch /home/test/tmp/radare2/libr/bin/bin.c:1920
+    #10 0x7fad51217a9d in r_core_bin_set_arch_bits /home/test/tmp/radare2/libr/core/cbin.c:2762
+    #11 0x7fad51217e52 in r_core_bin_update_arch_bits /home/test/tmp/radare2/libr/core/cbin.c:2787
+    #12 0x56350152be9d in main /home/test/tmp/radare2/binr/radare2/radare2.c:1007
+    #13 0x7fad4a0c582f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/test/tmp/radare2/binr/radare2/radare2+0x67d05)
+Shadow bytes around the buggy address:
+  0x0c327fffb370: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c327fffb380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c327fffb390: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c327fffb3a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c327fffb3b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c327fffb3c0: 00 00 00 00 00 00 00[fa]fa fa fa fa fa fa fa fa
+  0x0c327fffb3d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fffb3e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fffb3f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fffb400: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c327fffb410: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68698==ABORTING

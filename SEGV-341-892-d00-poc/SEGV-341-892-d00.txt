@@ -1,0 +1,26 @@
+Warning: Invalid import directory size: 0xffff is now 0xab0
+ASAN:DEADLYSIGNAL
+=================================================================
+==68940==ERROR: AddressSanitizer: SEGV on unknown address 0x61d100000000 (pc 0x7f44b528c972 bp 0x61d100000000 sp 0x7fff0bd5a810 T0)
+    #0 0x7f44b528c971 in _IO_vsnprintf /build/glibc-GKVZIf/glibc-2.23/libio/vsnprintf.c:111
+    #1 0x55a57e111bc2 in vsnprintf ??:?
+    #2 0x55a57e112000 in snprintf ??:?
+    #3 0x7f44b62c4236 in r_pkcs7_cms_dump /home/test/tmp/radare2/libr/util/r_pkcs7.c:582
+    #4 0x7f44bb2d0b0f in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1923
+    #5 0x7f44bb2c39bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #6 0x7f44bb2c3d79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #7 0x7f44bb2a585e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #8 0x7f44bb106f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #9 0x7f44bb10545d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #10 0x7f44bb1049fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #11 0x7f44bb101da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #12 0x7f44bb101b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #13 0x7f44bc303c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #14 0x7f44bc300e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #15 0x55a57e19c408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #16 0x7f44b523682f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #17 0x55a57e0c7f38 in _start ??:?
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/lib/x86_64-linux-gnu/libc.so.6+0x76971)
+==68940==ABORTING

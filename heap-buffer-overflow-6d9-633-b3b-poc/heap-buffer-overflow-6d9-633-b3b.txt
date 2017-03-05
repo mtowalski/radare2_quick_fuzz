@@ -1,0 +1,747 @@
+Invalid tag '100' at offset 0x00000357
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb06) + offset (0xc2b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb7001a23) + offset (0xc33) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b606) + offset (0xc3b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xbb00165f) + offset (0xc43) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1db606) + offset (0xc4b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60025b8) + offset (0xc53) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1659125e) + offset (0xc5b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb6001dbc) + offset (0xc63) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b20016) + offset (0xc6b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1250b706) + offset (0xc73) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60027) + offset (0xc7b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x101258) + offset (0xc83) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x3011d21) + offset (0xc8b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10e0044) + offset (0xc93) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x11e0047) + offset (0xc9b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2a000a) + offset (0xca3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x8011d) + offset (0xcbb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x20014) + offset (0xcc3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2f0009) + offset (0xccb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x36380006) + offset (0xcd3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xfe001107) + offset (0xcdb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x3615151b) + offset (0xce3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x15150a06) + offset (0xceb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x6000106) + offset (0xcf3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xbe000406) + offset (0xcfb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1b100a42) + offset (0xd03) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4db80043) + offset (0xd0b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1071db0) + offset (0xd13) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x7000006) + offset (0xd23) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x48000006) + offset (0xd2b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x74000006) + offset (0xd33) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xa0000006) + offset (0xd3b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xcc000006) + offset (0xd43) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xbb00165f) + offset (0xd4b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1db606) + offset (0xd53) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60025b8) + offset (0xd5b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1659124a) + offset (0xd63) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb6001dbc) + offset (0xd6b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b20016) + offset (0xd73) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1246b706) + offset (0xd7b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60027) + offset (0xd83) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb06) + offset (0xd8b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb7001a23) + offset (0xd93) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b606) + offset (0xd9b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xbb00165f) + offset (0xda3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1db606) + offset (0xdab) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60025b8) + offset (0xdb3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x16591252) + offset (0xdbb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb6001dbc) + offset (0xdc3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b20016) + offset (0xdcb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x124eb706) + offset (0xdd3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60027) + offset (0xddb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb06) + offset (0xde3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb7000085) + offset (0xdeb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b606) + offset (0xdf3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xbb00165f) + offset (0xdfb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1db606) + offset (0xe03) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60025b8) + offset (0xe0b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb600258a) + offset (0xe13) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xa1fefab7) + offset (0xe1b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+r_bin_java_default_attr_new: Unable to find the name for 17 index.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2a000406) + offset (0xe74) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 1.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xc000d06) + offset (0xe7c) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x8011306) + offset (0xe8c) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2000e07) + offset (0xe94) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2f000306) + offset (0xe9c) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x15000d04) + offset (0xea4) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x380138) + offset (0xeac) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1515151b) + offset (0xeb4) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x5b0062) + offset (0xebc) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x42b70020) + offset (0x10a8) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0x10b0) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0x10b8) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0x10c0) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0x10c8) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0x10d0) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0x10d8) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0x10e0) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591248bd) + offset (0x10e8) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db606) + offset (0x10f0) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0x10f8) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4ab70020) + offset (0x1100) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0x1108) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0x1110) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0x1118) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0x1120) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0x1128) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0x1130) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0x1138) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591258bd) + offset (0x1140) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0x1150) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x50b70020) + offset (0x1158) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0x1160) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x101252bc) + offset (0x1168) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x11d1ba7) + offset (0x1170) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+r_bin_java_default_attr_new: Unable to find the name for 45312 index.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0x147e) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 1.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0x1486) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0x148e) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0x1496) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x7fff0023) + offset (0x149e) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0x14a6) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591250bd) + offset (0x14ae) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db606) + offset (0x14b6) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb2001018) + offset (0x14be) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x84030123) + offset (0x14c6) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb1000006) + offset (0x14ce) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+r_bin_java_default_attr_new: Unable to find the name for 2560 index.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb7000085) + offset (0x5adc) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 1.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b606) + offset (0x5ae4) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xbb00165f) + offset (0x5aec) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1db606) + offset (0x5af4) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60025b8) + offset (0x5afc) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb600258a) + offset (0x5b04) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xa1fefab7) + offset (0x5b0c) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+r_bin_java_default_attr_new: Unable to find the name for 17 index.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2a000406) + offset (0x5b65) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 1.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xc000d06) + offset (0x5b6d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x8011306) + offset (0x5b7d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2000e07) + offset (0x5b85) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2f000306) + offset (0x5b8d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x15000d04) + offset (0x5b95) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x380138) + offset (0x5b9d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1515151b) + offset (0x5ba5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x5b0062) + offset (0x5bad) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x42b70020) + offset (0x5d99) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0x5da1) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0x5da9) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0x5db1) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0x5db9) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0x5dc1) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0x5dc9) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0x5dd1) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591248bd) + offset (0x5dd9) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db606) + offset (0x5de1) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0x5de9) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4ab70020) + offset (0x5df1) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0x5df9) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0x5e01) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0x5e09) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0x5e11) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0x5e19) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0x5e21) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0x5e29) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591258bd) + offset (0x5e31) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0x5e41) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x50b70020) + offset (0x5e49) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0x5e51) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x101252bc) + offset (0x5e59) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x11d1ba7) + offset (0x5e61) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+r_bin_java_default_attr_new: Unable to find the name for 45312 index.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0x616f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 1.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0x6177) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0x617f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0x6187) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x7fff0023) + offset (0x618f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0x6197) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591250bd) + offset (0x619f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db606) + offset (0x61a7) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb2001018) + offset (0x61af) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x84030123) + offset (0x61b7) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb1000006) + offset (0x61bf) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+r_bin_java_default_attr_new: Unable to find the name for 2560 index.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0xa7cd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 1.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x48b70020) + offset (0xa7d5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0xa7dd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0xa7e5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0xa7ed) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0xa7f5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0xa7fd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0xa805) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0xa80d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x59124ebd) + offset (0xa815) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db606) + offset (0xa81d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0xa825) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x58b70020) + offset (0xa82d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0xa835) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0xa83d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0xa845) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0xa84d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x52b6002b) + offset (0xa855) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1ba1f806) + offset (0xa85d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x3e011606) + offset (0xa865) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x41000b06) + offset (0xa86d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xd000006) + offset (0xa87d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x54002f06) + offset (0xa885) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x17005506) + offset (0xa88d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xe011006) + offset (0xa895) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x3003338) + offset (0xa89d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+r_bin_java_default_attr_new: Unable to find the name for 14336 index.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0xbdab) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 1.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4eb70020) + offset (0xbdb3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0xbdbb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0xbdc3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x8005) + offset (0xbdcb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0xbdd3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0xbddb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0xbde3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0xbdeb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x258409) + offset (0xbdf3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xfefab106) + offset (0xbdfb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4306) + offset (0xbe0b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x8004506) + offset (0xbe13) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x11004706) + offset (0xbe1b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x5a004906) + offset (0xbe23) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x86004b06) + offset (0xbe2b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb2004d06) + offset (0xbe33) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xde004f06) + offset (0xbe3b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xa005207) + offset (0xbe43) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a005506) + offset (0xbe4b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2a000406) + offset (0xbe53) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xc000d06) + offset (0xbe5b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x8011306) + offset (0xbe6b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2000e07) + offset (0xbe73) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2f000306) + offset (0xbe7b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x15000d04) + offset (0xbe83) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x380138) + offset (0xbe8b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1515151b) + offset (0xbe93) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x5b0062) + offset (0xbe9b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x42b70020) + offset (0xc087) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0xc08f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0xc097) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0xc09f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0xc0a7) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0xc0af) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0xc0b7) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0xc0bf) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591248bd) + offset (0xc0c7) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db606) + offset (0xc0cf) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0xc0d7) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4ab70020) + offset (0xc0df) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0xc0e7) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0xc0ef) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0xc0f7) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0xc0ff) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0xc107) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0xc10f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0xc117) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591258bd) + offset (0xc11f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0xc12f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x50b70020) + offset (0xc137) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0xc13f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x101252bc) + offset (0xc147) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x11d1ba7) + offset (0xc14f) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+r_bin_java_default_attr_new: Unable to find the name for 45312 index.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0xc45d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 1.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0xc465) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0xc46d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0xc475) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x7fff0023) + offset (0xc47d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0xc485) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591250bd) + offset (0xc48d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db606) + offset (0xc495) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb2001018) + offset (0xc49d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x84030123) + offset (0xc4a5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb1000006) + offset (0xc4ad) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4606) + offset (0xc4b5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x43000306) + offset (0xc4bd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x45000b06) + offset (0xc4c5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x47004406) + offset (0xc4cd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x49007006) + offset (0xc4d5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4b009c06) + offset (0xc4dd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4d00c806) + offset (0xc4e5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x4f00f406) + offset (0xc4ed) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x52011206) + offset (0xc4f5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x55000b06) + offset (0xc4fd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xd000006) + offset (0xc50d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x54002f06) + offset (0xc515) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x13005506) + offset (0xc51d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xe010c06) + offset (0xc525) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x3003106) + offset (0xc52d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x132151b) + offset (0xc53d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x15151510) + offset (0xc545) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x5c0007) + offset (0xc54d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1be000a) + offset (0xc555) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x11b1010) + offset (0xc55d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x374db806) + offset (0xc565) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xa7010723) + offset (0xc56d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xf90005) + offset (0xc575) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x70006) + offset (0xc57d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x480006) + offset (0xc585) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x740006) + offset (0xc58d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xa00006) + offset (0xc595) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xcc0006) + offset (0xc59d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0xc5a5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0xc5ad) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0xc5b5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0xc5bd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0xc5c5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0xc5cd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x591246bd) + offset (0xc5d5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db606) + offset (0xc5dd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0xc5e5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x48b70020) + offset (0xc5ed) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0xc5f5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0xc5fd) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0xc605) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0xc60d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x165918) + offset (0xc615) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db60023) + offset (0xc61d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x25b206) + offset (0xc625) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x59124ebd) + offset (0xc62d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1db606) + offset (0xc635) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb20010c1) + offset (0xc63d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x58b70020) + offset (0xc645) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb60021bc) + offset (0xc64d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x10bb001c) + offset (0xc655) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1a1dbc) + offset (0xc65d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x21b6002b) + offset (0xc665) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x52b6002b) + offset (0xc66d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1ba1f806) + offset (0xc675) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x3e011606) + offset (0xc67d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x41000b06) + offset (0xc685) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xd000006) + offset (0xc695) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x54002f06) + offset (0xc69d) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x17005506) + offset (0xc6a5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xe011006) + offset (0xc6ad) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x3003338) + offset (0xc6b5) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+r_bin_java_default_attr_new: Unable to find the name for 14336 index.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x306) + offset (0xdbc3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 1.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x46001106) + offset (0xdbcb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0xb005a06) + offset (0xdbdb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x44005c06) + offset (0xdbe3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdbeb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdbf3) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdbfb) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdc03) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdc0b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdc13) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdc1b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdc23) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdc2b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x30303036) + offset (0xdc33) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x3011806) + offset (0xdc3b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x1000807) + offset (0xdc43) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x56000206) + offset (0xdc4b) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+[X] r_bin_java: Error unable to parse remainder of classfile in Attribute len (0x2d310035) + offset (0xdc53) exceeds length of buffer (0xdd4c).
+[X] r_bin_java: Error unable to parse remainder of classfile after Field Attribute: 0.
+=================================================================
+==68752==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6110000058b1 at pc 0x7fd816c100b3 bp 0x7ffd43c92c30 sp 0x7ffd43c92c28
+READ of size 1 at 0x6110000058b1 thread T0
+    #0 0x7fd816c100b2 in r_bin_java_read_from_buffer_verification_info_new /home/test/tmp/radare2/shlr/java/class.c:3878
+    #1 0x7fd816c116e9 in r_bin_java_stack_map_frame_new /home/test/tmp/radare2/shlr/java/class.c:4028
+    #2 0x7fd816c135b3 in r_bin_java_stack_map_table_attr_new /home/test/tmp/radare2/shlr/java/class.c:4310
+    #3 0x7fd816bfc53a in r_bin_java_read_next_attr_from_buffer /home/test/tmp/radare2/shlr/java/class.c:1995
+    #4 0x7fd816bf736d in r_bin_java_read_next_attr /home/test/tmp/radare2/shlr/java/class.c:1955
+    #5 0x7fd816bf8bb0 in r_bin_java_read_next_field /home/test/tmp/radare2/shlr/java/class.c:1455
+    #6 0x7fd816bfe394 in r_bin_java_parse_fields /home/test/tmp/radare2/shlr/java/class.c:2123
+    #7 0x7fd816bffc1a in r_bin_java_load_bin /home/test/tmp/radare2/shlr/java/class.c:2271
+    #8 0x7fd816bff6e4 in r_bin_java_new_bin /home/test/tmp/radare2/shlr/java/class.c:2233
+    #9 0x7fd816c068d6 in r_bin_java_new_buf /home/test/tmp/radare2/shlr/java/class.c:2943
+    #10 0x7fd816a9b1ff in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_java.c:77
+    #11 0x7fd816990f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #12 0x7fd81698f45d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #13 0x7fd81698e9fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #14 0x7fd81698bda7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #15 0x7fd81698bb51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #16 0x7fd817b8dc0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #17 0x7fd817b8ae07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #18 0x55a7efa17408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #19 0x7fd810ac082f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #20 0x55a7ef942f38 in _start ??:?
+
+0x6110000058b1 is located 0 bytes to the right of 241-byte region [0x6110000057c0,0x6110000058b1)
+allocated by thread T0 here:
+    #0 0x55a7ef9e3220 in calloc ??:?
+    #1 0x7fd816bfb5f0 in r_bin_java_get_attr_buf /home/test/tmp/radare2/shlr/java/class.c:1876
+    #2 0x7fd816bf7343 in r_bin_java_read_next_attr /home/test/tmp/radare2/shlr/java/class.c:1952
+    #3 0x7fd816bf8bb0 in r_bin_java_read_next_field /home/test/tmp/radare2/shlr/java/class.c:1455
+    #4 0x7fd816bfe394 in r_bin_java_parse_fields /home/test/tmp/radare2/shlr/java/class.c:2123
+    #5 0x7fd816bffc1a in r_bin_java_load_bin /home/test/tmp/radare2/shlr/java/class.c:2271
+    #6 0x7fd816bff6e4 in r_bin_java_new_bin /home/test/tmp/radare2/shlr/java/class.c:2233
+    #7 0x7fd816c068d6 in r_bin_java_new_buf /home/test/tmp/radare2/shlr/java/class.c:2943
+    #8 0x7fd816a9b1ff in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_java.c:77
+    #9 0x7fd816990f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #10 0x7fd81698f45d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #11 0x7fd81698e9fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #12 0x7fd81698bda7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #13 0x7fd81698bb51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #14 0x7fd817b8dc0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #15 0x7fd817b8ae07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #16 0x55a7efa17408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #17 0x7fd810ac082f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (//home/test/tmp/radare2/libr/bin/libr_bin.so+0x3430b2)
+Shadow bytes around the buggy address:
+  0x0c227fff8ac0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c227fff8ad0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c227fff8ae0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c227fff8af0: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c227fff8b00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c227fff8b10: 00 00 00 00 00 00[01]fa fa fa fa fa fa fa fa fa
+  0x0c227fff8b20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c227fff8b30: 00 00 00 00 00 00 00 00 00 00 00 fa fa fa fa fa
+  0x0c227fff8b40: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c227fff8b50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c227fff8b60: 00 00 00 00 fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68752==ABORTING

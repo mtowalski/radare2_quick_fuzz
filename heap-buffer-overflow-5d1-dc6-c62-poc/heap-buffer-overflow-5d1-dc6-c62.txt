@@ -1,0 +1,79 @@
+Warning: Cannot initialize dynamic strings
+opcode elpm @a8 returned 0 cycles.
+opcode st @aa returned 0 cycles.
+opcode std @350 returned 0 cycles.
+opcode lds @55a returned 0 cycles.
+opcode st @ddc returned 0 cycles.
+=================================================================
+==68721==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x602000038337 at pc 0x7f09bee26f51 bp 0x7ffeeb2b1250 sp 0x7ffeeb2b1248
+READ of size 1 at 0x602000038337 thread T0
+    #0 0x7f09bee26f50 in r_anal_type_func_guess /home/test/tmp/radare2/libr/anal/types.c:398
+    #1 0x7f09bee2dc80 in r_anal_noreturn_at_name /home/test/tmp/radare2/libr/anal/anal.c:534
+    #2 0x7f09bee2dbbc in r_anal_noreturn_at /home/test/tmp/radare2/libr/anal/anal.c:575
+    #3 0x7f09bee092cf in fcn_recurse /home/test/tmp/radare2/libr/anal/fcn.c:988
+    #4 0x7f09bee0813b in fcn_recurse /home/test/tmp/radare2/libr/anal/fcn.c:914 (discriminator 2)
+    #5 0x7f09bee082e5 in fcn_recurse /home/test/tmp/radare2/libr/anal/fcn.c:915 (discriminator 2)
+    #6 0x7f09bee006e2 in r_anal_fcn /home/test/tmp/radare2/libr/anal/fcn.c:1192
+    #7 0x7f09c1282af6 in core_anal_fcn /home/test/tmp/radare2/libr/core/canal.c:507
+    #8 0x7f09c1281d38 in r_core_anal_fcn /home/test/tmp/radare2/libr/core/canal.c:1405
+    #9 0x7f09c1290e1e in r_core_anal_all /home/test/tmp/radare2/libr/core/canal.c:2765
+    #10 0x7f09c1138818 in cmd_anal_all /home/test/tmp/radare2/libr/core/./cmd_anal.c:5127
+    #11 0x7f09c10b9a64 in cmd_anal /home/test/tmp/radare2/libr/core/./cmd_anal.c:5477
+    #12 0x7f09c1276587 in r_cmd_call /home/test/tmp/radare2/libr/core/cmd_api.c:226
+    #13 0x7f09c11210ba in r_core_cmd_subst_i /home/test/tmp/radare2/libr/core/cmd.c:2066 (discriminator 4)
+    #14 0x7f09c10b3a29 in r_core_cmd_subst /home/test/tmp/radare2/libr/core/cmd.c:1341
+    #15 0x7f09c10adc30 in r_core_cmd /home/test/tmp/radare2/libr/core/cmd.c:2622
+    #16 0x7f09c1090a69 in r_core_cmd0 /home/test/tmp/radare2/libr/core/cmd.c:2768
+    #17 0x55aae28599d4 in main /home/test/tmp/radare2/binr/radare2/radare2.c:1095
+    #18 0x7f09ba10682f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #19 0x55aae2783f38 in _start ??:?
+
+0x602000038337 is located 1 bytes to the right of 6-byte region [0x602000038330,0x602000038336)
+allocated by thread T0 here:
+    #0 0x55aae27beba0 in __interceptor_strdup ??:?
+    #1 0x7f09bb9737e6 in set_name /home/test/tmp/radare2/libr/flag/flag.c:82
+    #2 0x7f09bb973163 in r_flag_set /home/test/tmp/radare2/libr/flag/flag.c:451
+    #3 0x7f09c1261397 in bin_symbols_internal /home/test/tmp/radare2/libr/core/cbin.c:1684
+    #4 0x7f09c12556c4 in bin_symbols /home/test/tmp/radare2/libr/core/cbin.c:1814
+    #5 0x7f09c124903a in r_core_bin_info /home/test/tmp/radare2/libr/core/cbin.c:2718
+    #6 0x7f09c1248cb2 in r_core_bin_set_env /home/test/tmp/radare2/libr/core/cbin.c:109
+    #7 0x7f09c11d3c6b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:434
+    #8 0x7f09c11d0e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #9 0x55aae2858408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #10 0x7f09ba10682f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (//home/test/tmp/radare2/libr/anal/libr_anal.so+0x535f50)
+Shadow bytes around the buggy address:
+  0x0c047ffff010: fa fa fd fd fa fa fd fd fa fa fd fa fa fa 00 03
+  0x0c047ffff020: fa fa 00 01 fa fa fd fd fa fa 00 01 fa fa fd fd
+  0x0c047ffff030: fa fa fd fd fa fa fd fa fa fa fd fa fa fa 07 fa
+  0x0c047ffff040: fa fa fd fa fa fa 07 fa fa fa fd fa fa fa fd fa
+  0x0c047ffff050: fa fa fd fa fa fa fd fa fa fa 07 fa fa fa 06 fa
+=>0x0c047ffff060: fa fa fd fa fa fa[06]fa fa fa fd fa fa fa fd fa
+  0x0c047ffff070: fa fa fd fa fa fa fd fa fa fa 00 03 fa fa 00 03
+  0x0c047ffff080: fa fa fd fd fa fa 00 03 fa fa fd fd fa fa fd fd
+  0x0c047ffff090: fa fa fd fa fa fa 00 01 fa fa 00 fa fa fa fd fd
+  0x0c047ffff0a0: fa fa fd fd fa fa fd fd fa fa 00 00 fa fa fd fd
+  0x0c047ffff0b0: fa fa 00 00 fa fa fd fd fa fa fd fd fa fa fd fd
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68721==ABORTING

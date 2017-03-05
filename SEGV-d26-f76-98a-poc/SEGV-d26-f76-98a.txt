@@ -1,0 +1,26 @@
+Warning: Invalid import directory size: 0xffff is now 0xa40
+ASAN:DEADLYSIGNAL
+=================================================================
+==69003==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000008 (pc 0x7fa777c84fb3 bp 0x7fff53126c10 sp 0x7fff53126b10 T0)
+    #0 0x7fa777c84fb2 in r_x509_subjectpublickeyinfo_dump /home/test/tmp/radare2/libr/util/r_x509.c:488
+    #1 0x7fa777c85bfc in r_x509_tbscertificate_dump /home/test/tmp/radare2/libr/util/r_x509.c:581
+    #2 0x7fa777c862d0 in r_x509_certificate_dump /home/test/tmp/radare2/libr/util/r_x509.c:637
+    #3 0x7fa777c7e038 in r_pkcs7_cms_dump /home/test/tmp/radare2/libr/util/r_pkcs7.c:567
+    #4 0x7fa77cc8ab0f in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1923
+    #5 0x7fa77cc7d9bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #6 0x7fa77cc7dd79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #7 0x7fa77cc5f85e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #8 0x7fa77cac0f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #9 0x7fa77cabf45d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #10 0x7fa77cabe9fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #11 0x7fa77cabbda7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #12 0x7fa77cabbb51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #13 0x7fa77dcbdc0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #14 0x7fa77dcbae07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #15 0x558aef2bd408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #16 0x7fa776bf082f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #17 0x558aef1e8f38 in _start ??:?
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (//home/test/tmp/radare2/libr/util/libr_util.so+0x1a4fb2)
+==69003==ABORTING

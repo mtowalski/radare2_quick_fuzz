@@ -1,0 +1,87 @@
+Warning: Invalid import directory size: 0xffff is now 0xa60
+=================================================================
+==68870==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60200002bcf8 at pc 0x7f164f9a5729 bp 0x7ffd2f0b5870 sp 0x7ffd2f0b5868
+READ of size 8 at 0x60200002bcf8 thread T0
+    #0 0x7f164f9a5728 in r_x509_parse_name /home/test/tmp/radare2/libr/util/r_x509.c:118
+    #1 0x7f164f9a728d in r_x509_parse_tbscertificate /home/test/tmp/radare2/libr/util/r_x509.c:199
+    #2 0x7f164f9a7f69 in r_x509_parse_certificate /home/test/tmp/radare2/libr/util/r_x509.c:254
+    #3 0x7f164f99da19 in r_pkcs7_parse_extendedcertificatesandcertificates /home/test/tmp/radare2/libr/util/r_pkcs7.c:52
+    #4 0x7f164f9a081a in r_pkcs7_parse_signeddata /home/test/tmp/radare2/libr/util/r_pkcs7.c:263
+    #5 0x7f164f9a0fea in r_pkcs7_parse_cms /home/test/tmp/radare2/libr/util/r_pkcs7.c:303
+    #6 0x7f16549afb02 in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1922
+    #7 0x7f16549a29bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #8 0x7f16549a2d79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #9 0x7f165498485e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #10 0x7f16547e5f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #11 0x7f16547e445d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #12 0x7f16547e39fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #13 0x7f16547e0da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #14 0x7f16547e0b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #15 0x7f16559e2c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #16 0x7f16559dfe07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #17 0x555770184408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #18 0x7f164e91582f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #19 0x5557700aff38 in _start ??:?
+
+0x60200002bcf8 is located 0 bytes to the right of 8-byte region [0x60200002bcf0,0x60200002bcf8)
+allocated by thread T0 here:
+    #0 0x555770150220 in calloc ??:?
+    #1 0x7f164f9b0598 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:416
+    #2 0x7f164f9b0716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #3 0x7f164f9b0716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #4 0x7f164f9b0716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #5 0x7f164f9b0716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #6 0x7f164f9b0716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #7 0x7f164f9b0716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #8 0x7f164f9b0716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #9 0x7f164f9b0716 in r_asn1_create_object /home/test/tmp/radare2/libr/util/r_asn1.c:423
+    #10 0x7f164f9a0c20 in r_pkcs7_parse_cms /home/test/tmp/radare2/libr/util/r_pkcs7.c:297
+    #11 0x7f16549afb02 in bin_pe_get_certificate /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1922
+    #12 0x7f16549a29bc in bin_pe_init /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:1962
+    #13 0x7f16549a2d79 in Pe32_r_bin_pe_new_buf /home/test/tmp/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2979
+    #14 0x7f165498485e in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_pe.c:32
+    #15 0x7f16547e5f82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #16 0x7f16547e445d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #17 0x7f16547e39fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #18 0x7f16547e0da7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #19 0x7f16547e0b51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #20 0x7f16559e2c0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #21 0x7f16559dfe07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #22 0x555770184408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #23 0x7f164e91582f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (//home/test/tmp/radare2/libr/util/libr_util.so+0x1a0728)
+Shadow bytes around the buggy address:
+  0x0c047fffd740: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd750: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd760: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd770: fa fa 00 fa fa fa 00 fa fa fa 03 fa fa fa 00 fa
+  0x0c047fffd780: fa fa 00 00 fa fa 00 fa fa fa 00 fa fa fa 00 fa
+=>0x0c047fffd790: fa fa 00 fa fa fa 00 fa fa fa 00 fa fa fa 00[fa]
+  0x0c047fffd7a0: fa fa 00 fa fa fa 00 fa fa fa 00 00 fa fa 00 fa
+  0x0c047fffd7b0: fa fa 00 00 fa fa 00 00 fa fa 00 fa fa fa 00 fa
+  0x0c047fffd7c0: fa fa 00 00 fa fa 00 00 fa fa 00 00 fa fa 00 fa
+  0x0c047fffd7d0: fa fa 00 00 fa fa 00 00 fa fa 00 fa fa fa 00 fa
+  0x0c047fffd7e0: fa fa 00 00 fa fa 00 07 fa fa 02 fa fa fa 05 fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68870==ABORTING

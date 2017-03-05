@@ -1,0 +1,24 @@
+ASAN:DEADLYSIGNAL
+=================================================================
+==69019==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x562e32bbebdd bp 0x7ffdd13d5890 sp 0x7ffdd13d4ff0 T0)
+    #0 0x562e32bbebdc in _ZN6__asan9asan_freeEPvPN11__sanitizer18BufferedStackTraceENS_9AllocTypeE :?
+    #1 0x562e32c5aeec in __interceptor_cfree.localalias.0 asan_malloc_linux.cc.o:?
+    #2 0x7fbb61166c5c in free_pubdef /home/test/tmp/radare2/libr/..//libr/bin/p/../format/omf/omf.c:556
+    #3 0x7fbb61163d0b in free_all_omf_records /home/test/tmp/radare2/libr/..//libr/bin/p/../format/omf/omf.c:570
+    #4 0x7fbb61163abb in r_bin_free_all_omf_obj /home/test/tmp/radare2/libr/..//libr/bin/p/../format/omf/omf.c:618
+    #5 0x7fbb6116493e in r_bin_internal_omf_load /home/test/tmp/radare2/libr/..//libr/bin/p/../format/omf/omf.c:635
+    #6 0x7fbb611624a6 in load_bytes /home/test/tmp/radare2/libr/..//libr/bin/p/bin_omf.c:13
+    #7 0x7fbb60fcff82 in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1203
+    #8 0x7fbb60fce45d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #9 0x7fbb60fcd9fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #10 0x7fbb60fcada7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #11 0x7fbb60fcab51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #12 0x7fbb621ccc0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #13 0x7fbb621c9e07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #14 0x562e32c8f408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #15 0x7fbb5b0ff82f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #16 0x562e32bbaf38 in _start ??:?
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/home/test/tmp/radare2/binr/radare2/radare2+0x23bdc)
+==69019==ABORTING

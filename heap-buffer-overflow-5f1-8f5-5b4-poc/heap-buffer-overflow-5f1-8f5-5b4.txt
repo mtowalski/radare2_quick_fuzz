@@ -1,0 +1,70 @@
+Warning: Cannot initialize program headers
+Warning: Cannot initialize dynamic strings
+Warning: Cannot initialize dynamic section
+=================================================================
+==68729==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60200002bc32 at pc 0x7faa2f3ae6c7 bp 0x7ffff2cd8910 sp 0x7ffff2cd8908
+READ of size 1 at 0x60200002bc32 thread T0
+    #0 0x7faa2f3ae6c6 in _set_arm_thumb_bits /home/test/tmp/radare2/libr/..//libr/bin/p/bin_elf.c:325
+    #1 0x7faa2f3a9a7a in symbols /home/test/tmp/radare2/libr/..//libr/bin/p/bin_elf.c:398
+    #2 0x7faa2f3237aa in r_bin_object_set_items /home/test/tmp/radare2/libr/bin/bin.c:636
+    #3 0x7faa2f3134df in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1240
+    #4 0x7faa2f31145d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #5 0x7faa2f3109fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #6 0x7faa2f30dda7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #7 0x7faa2f30db51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #8 0x7faa3050fc0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #9 0x7faa3050ce07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #10 0x558e70fa0408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #11 0x7faa2944282f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+    #12 0x558e70ecbf38 in _start ??:?
+
+0x60200002bc32 is located 0 bytes to the right of 2-byte region [0x60200002bc30,0x60200002bc32)
+allocated by thread T0 here:
+    #0 0x558e70f06ba0 in __interceptor_strdup ??:?
+    #1 0x7faa2f3a94b1 in symbols /home/test/tmp/radare2/libr/..//libr/bin/p/bin_elf.c:388
+    #2 0x7faa2f3237aa in r_bin_object_set_items /home/test/tmp/radare2/libr/bin/bin.c:636
+    #3 0x7faa2f3134df in r_bin_object_new /home/test/tmp/radare2/libr/bin/bin.c:1240
+    #4 0x7faa2f31145d in r_bin_file_new_from_bytes /home/test/tmp/radare2/libr/bin/bin.c:1428
+    #5 0x7faa2f3109fa in r_bin_load_io_at_offset_as_sz /home/test/tmp/radare2/libr/bin/bin.c:974
+    #6 0x7faa2f30dda7 in r_bin_load_io_at_offset_as /home/test/tmp/radare2/libr/bin/bin.c:988
+    #7 0x7faa2f30db51 in r_bin_load_io /home/test/tmp/radare2/libr/bin/bin.c:831
+    #8 0x7faa3050fc0b in r_core_file_do_load_for_io_plugin /home/test/tmp/radare2/libr/core/file.c:429
+    #9 0x7faa3050ce07 in r_core_bin_load /home/test/tmp/radare2/libr/core/file.c:552
+    #10 0x558e70fa0408 in main /home/test/tmp/radare2/binr/radare2/radare2.c:898
+    #11 0x7faa2944282f in __libc_start_main /build/glibc-GKVZIf/glibc-2.23/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (//home/test/tmp/radare2/libr/bin/libr_bin.so+0x15f6c6)
+Shadow bytes around the buggy address:
+  0x0c047fffd730: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd740: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd750: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd760: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd770: fa fa fa fa fa fa fa fa fa fa fa fa fa fa 06 fa
+=>0x0c047fffd780: fa fa 05 fa fa fa[02]fa fa fa 02 fa fa fa 02 fa
+  0x0c047fffd790: fa fa 01 fa fa fa 01 fa fa fa 02 fa fa fa 02 fa
+  0x0c047fffd7a0: fa fa 02 fa fa fa 07 fa fa fa 02 fa fa fa 01 fa
+  0x0c047fffd7b0: fa fa 05 fa fa fa 07 fa fa fa fd fd fa fa 01 fa
+  0x0c047fffd7c0: fa fa 06 fa fa fa 06 fa fa fa 05 fa fa fa 05 fa
+  0x0c047fffd7d0: fa fa 00 04 fa fa 05 fa fa fa 05 fa fa fa 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Heap right redzone:      fb
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack partial redzone:   f4
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==68729==ABORTING
