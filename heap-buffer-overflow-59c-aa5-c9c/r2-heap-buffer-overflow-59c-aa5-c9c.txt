@@ -1,0 +1,72 @@
+==16136==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60200002be13 at pc 0x562fe43c159d bp 0x7ffd622caab0 sp 0x7ffd622ca260
+READ of size 4 at 0x60200002be13 thread T0
+    #0 0x562fe43c159c in printf_common(void*, char const*, __va_list_tag*) (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xa559c)
+    #1 0x562fe43c3aa5 in vsnprintf (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xa7aa5)
+    #2 0x7f2671407c9c in r_str_newf /home/mtowalski/Fuzzing/Programs/radare2/libr/util/str.c:681:8
+    #3 0x7f26769fdedf in get_protocol_list_t /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/objc/mach0_classes.c:747:17
+    #4 0x7f26769f9199 in get_class_ro_t /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/objc/mach0_classes.c:899:3
+    #5 0x7f26769f5d57 in get_class_t /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/objc/mach0_classes.c:968:2
+    #6 0x7f26769f44c6 in parse_classes /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/objc/mach0_classes.c:1128:3
+    #7 0x7f26768842f4 in r_bin_object_set_items /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:678:17
+    #8 0x7f267686bc34 in r_bin_object_new /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1240:2
+    #9 0x7f2676868d77 in r_bin_file_new_from_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1428:6
+    #10 0x7f2676867b70 in r_bin_load_io_at_offset_as_sz /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:974:13
+    #11 0x7f2676863f90 in r_bin_load_io_at_offset_as /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:988:12
+    #12 0x7f2676863b2a in r_bin_load_io /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:831:9
+    #13 0x7f2677bde7ca in r_core_file_do_load_for_io_plugin /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:429:7
+    #14 0x7f2677bdab2e in r_core_bin_load /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:552:4
+    #15 0x562fe443005f in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:916:14
+    #16 0x7f26704293f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+    #17 0x562fe433d219 in _start (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x21219)
+
+0x60200002be13 is located 0 bytes to the right of 3-byte region [0x60200002be10,0x60200002be13)
+allocated by thread T0 here:
+    #0 0x562fe43f2bf8 in malloc (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xd6bf8)
+    #1 0x7f26769fdce3 in get_protocol_list_t /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/objc/mach0_classes.c:738:12
+    #2 0x7f26769f9199 in get_class_ro_t /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/objc/mach0_classes.c:899:3
+    #3 0x7f26769f5d57 in get_class_t /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/objc/mach0_classes.c:968:2
+    #4 0x7f26769f44c6 in parse_classes /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/objc/mach0_classes.c:1128:3
+    #5 0x7f26768842f4 in r_bin_object_set_items /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:678:17
+    #6 0x7f267686bc34 in r_bin_object_new /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1240:2
+    #7 0x7f2676868d77 in r_bin_file_new_from_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1428:6
+    #8 0x7f2676867b70 in r_bin_load_io_at_offset_as_sz /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:974:13
+    #9 0x7f2676863f90 in r_bin_load_io_at_offset_as /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:988:12
+    #10 0x7f2676863b2a in r_bin_load_io /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:831:9
+    #11 0x7f2677bde7ca in r_core_file_do_load_for_io_plugin /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:429:7
+    #12 0x7f2677bdab2e in r_core_bin_load /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:552:4
+    #13 0x562fe443005f in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:916:14
+    #14 0x7f26704293f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xa559c) in printf_common(void*, char const*, __va_list_tag*)
+Shadow bytes around the buggy address:
+  0x0c047fffd770: fa fa 03 fa fa fa 01 fa fa fa 03 fa fa fa 01 fa
+  0x0c047fffd780: fa fa 03 fa fa fa 01 fa fa fa 03 fa fa fa 00 04
+  0x0c047fffd790: fa fa 03 fa fa fa 01 fa fa fa 03 fa fa fa 02 fa
+  0x0c047fffd7a0: fa fa 03 fa fa fa 02 fa fa fa 03 fa fa fa 01 fa
+  0x0c047fffd7b0: fa fa 03 fa fa fa 01 fa fa fa 03 fa fa fa 01 fa
+=>0x0c047fffd7c0: fa fa[03]fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd7d0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd7e0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd7f0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd800: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd810: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==16136==ABORTING

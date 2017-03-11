@@ -1,0 +1,76 @@
+==18017==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60200002a116 at pc 0x7effb9467e83 bp 0x7ffceefbea90 sp 0x7ffceefbea88
+READ of size 2 at 0x60200002a116 thread T0
+    #0 0x7effb9467e82 in r_anal_bb_offset_inst /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/bb.c:221:17
+    #1 0x7effb945e308 in r_anal_fcn_split_bb /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/fcn.c:1525:30
+    #2 0x7effb944e102 in fcn_recurse /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/fcn.c:576:3
+    #3 0x7effb9455fd7 in fcn_recurse /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/fcn.c:926:5
+    #4 0x7effb944c8f0 in r_anal_fcn /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/fcn.c:1208:8
+    #5 0x7effbbc2c3e3 in core_anal_fcn /home/mtowalski/Fuzzing/Programs/radare2/libr/core/canal.c:507:12
+    #6 0x7effbbc2b3df in r_core_anal_fcn /home/mtowalski/Fuzzing/Programs/radare2/libr/core/canal.c:1414:9
+    #7 0x7effbba9e322 in _anal_calls /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:3577:6
+    #8 0x7effbba99b60 in cmd_anal_calls /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:3641:5
+    #9 0x7effbba81b05 in cmd_anal_all /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:5177:12
+    #10 0x7effbb9e5ebd in cmd_anal /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:5493:8
+    #11 0x7effbbc1bcb2 in r_cmd_call /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd_api.c:226:10
+    #12 0x7effbba635b4 in r_core_cmd_subst_i /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2066:16
+    #13 0x7effbb9dec51 in r_core_cmd_subst /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:1341:9
+    #14 0x7effbb9d754e in r_core_cmd /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2630:9
+    #15 0x7effbb9b2fac in r_core_cmd0 /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2776:9
+    #16 0x562bf084b297 in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:1113:11
+    #17 0x7effb43963f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+    #18 0x562bf0756219 in _start (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x21219)
+
+0x60200002a116 is located 0 bytes to the right of 6-byte region [0x60200002a110,0x60200002a116)
+allocated by thread T0 here:
+    #0 0x562bf080bdf0 in calloc (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xd6df0)
+    #1 0x7effb9464913 in r_anal_bb_new /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/bb.c:24:15
+    #2 0x7effb945d366 in appendBasicBlock /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/fcn.c:243:19
+    #3 0x7effb944e1f9 in fcn_recurse /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/fcn.c:583:7
+    #4 0x7effb944c8f0 in r_anal_fcn /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/fcn.c:1208:8
+    #5 0x7effbbc2c3e3 in core_anal_fcn /home/mtowalski/Fuzzing/Programs/radare2/libr/core/canal.c:507:12
+    #6 0x7effbbc2b3df in r_core_anal_fcn /home/mtowalski/Fuzzing/Programs/radare2/libr/core/canal.c:1414:9
+    #7 0x7effbba9e322 in _anal_calls /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:3577:6
+    #8 0x7effbba99b60 in cmd_anal_calls /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:3641:5
+    #9 0x7effbba81b05 in cmd_anal_all /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:5177:12
+    #10 0x7effbb9e5ebd in cmd_anal /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:5493:8
+    #11 0x7effbbc1bcb2 in r_cmd_call /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd_api.c:226:10
+    #12 0x7effbba635b4 in r_core_cmd_subst_i /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2066:16
+    #13 0x7effbb9dec51 in r_core_cmd_subst /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:1341:9
+    #14 0x7effbb9d754e in r_core_cmd /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2630:9
+    #15 0x7effbb9b2fac in r_core_cmd0 /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2776:9
+    #16 0x562bf084b297 in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:1113:11
+    #17 0x7effb43963f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/bb.c:221:17 in r_anal_bb_offset_inst
+Shadow bytes around the buggy address:
+  0x0c047fffd3d0: fa fa 00 00 fa fa fd fd fa fa 00 05 fa fa 00 05
+  0x0c047fffd3e0: fa fa 00 05 fa fa 00 05 fa fa 00 02 fa fa fd fa
+  0x0c047fffd3f0: fa fa fd fd fa fa 06 fa fa fa fd fd fa fa 00 00
+  0x0c047fffd400: fa fa fd fd fa fa 00 05 fa fa 00 05 fa fa 00 05
+  0x0c047fffd410: fa fa 00 05 fa fa 00 02 fa fa fd fa fa fa 00 05
+=>0x0c047fffd420: fa fa[06]fa fa fa 06 fa fa fa fa fa fa fa fa fa
+  0x0c047fffd430: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd440: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd450: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd460: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fffd470: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==18017==ABORTING

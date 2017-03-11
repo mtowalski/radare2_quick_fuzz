@@ -1,0 +1,22 @@
+==29267==ERROR: AddressSanitizer: SEGV on unknown address 0x7fff578ed4b6 (pc 0x7efe7b5b3f65 bp 0x7fff56929b00 sp 0x7fff56921860 T0)
+==29267==The signal is caused by a READ memory access.
+    #0 0x7efe7b5b3f64 in dex_parse_debug_item /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/bin_dex.c:514:8
+    #1 0x7efe7b5af28a in parse_dex_class_method /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/bin_dex.c:1255:5
+    #2 0x7efe7b5a670a in parse_class /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/bin_dex.c:1394:7
+    #3 0x7efe7b5a1b61 in dex_loadcode /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/bin_dex.c:1482:4
+    #4 0x7efe7b597645 in entries /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/bin_dex.c:1609:3
+    #5 0x7efe7b51e333 in r_bin_object_set_items /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:617:16
+    #6 0x7efe7b507c34 in r_bin_object_new /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1240:2
+    #7 0x7efe7b504d77 in r_bin_file_new_from_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1428:6
+    #8 0x7efe7b503b70 in r_bin_load_io_at_offset_as_sz /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:974:13
+    #9 0x7efe7b4fff90 in r_bin_load_io_at_offset_as /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:988:12
+    #10 0x7efe7b4ffb2a in r_bin_load_io /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:831:9
+    #11 0x7efe7c87a7ca in r_core_file_do_load_for_io_plugin /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:429:7
+    #12 0x7efe7c876b2e in r_core_bin_load /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:552:4
+    #13 0x55a4ae29d05f in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:916:14
+    #14 0x7efe750c53f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+    #15 0x55a4ae1aa219 in _start (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x21219)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/bin_dex.c:514:8 in dex_parse_debug_item
+==29267==ABORTING

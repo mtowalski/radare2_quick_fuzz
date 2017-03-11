@@ -1,0 +1,70 @@
+arw 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000
+=================================================================
+==10547==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x62c000017aed at pc 0x5638875f6365 bp 0x7ffca63a2250 sp 0x7ffca63a1a00
+READ of size 24407 at 0x62c000017aed thread T0
+    #0 0x5638875f6364 in __asan_memcpy (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xc0364)
+    #1 0x7f59e16a1936 in parse_signature /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:596:6
+    #2 0x7f59e16913a2 in init_items /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:1139:4
+    #3 0x7f59e1676484 in init /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:1182:7
+    #4 0x7f59e1676996 in new_buf /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:1248:7
+    #5 0x7f59e166c45b in load_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/bin_mach0.c:42:8
+    #6 0x7f59e151b5ab in r_bin_object_new /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1203:16
+    #7 0x7f59e1518d77 in r_bin_file_new_from_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1428:6
+    #8 0x7f59e1517b70 in r_bin_load_io_at_offset_as_sz /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:974:13
+    #9 0x7f59e1513f90 in r_bin_load_io_at_offset_as /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:988:12
+    #10 0x7f59e1513b2a in r_bin_load_io /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:831:9
+    #11 0x7f59e288e7ca in r_core_file_do_load_for_io_plugin /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:429:7
+    #12 0x7f59e288ab2e in r_core_bin_load /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:552:4
+    #13 0x56388764a05f in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:916:14
+    #14 0x7f59db0d93f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+    #15 0x563887557219 in _start (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x21219)
+
+0x62c000017aed is located 0 bytes to the right of 30957-byte region [0x62c000010200,0x62c000017aed)
+allocated by thread T0 here:
+    #0 0x56388760cbf8 in malloc (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xd6bf8)
+    #1 0x7f59dc0e713e in r_buf_set_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/util/buf.c:289:17
+    #2 0x7f59e1676951 in new_buf /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/mach0/mach0.c:1245:7
+    #3 0x7f59e166c45b in load_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/bin_mach0.c:42:8
+    #4 0x7f59e151b5ab in r_bin_object_new /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1203:16
+    #5 0x7f59e1518d77 in r_bin_file_new_from_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1428:6
+    #6 0x7f59e1517b70 in r_bin_load_io_at_offset_as_sz /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:974:13
+    #7 0x7f59e1513f90 in r_bin_load_io_at_offset_as /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:988:12
+    #8 0x7f59e1513b2a in r_bin_load_io /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:831:9
+    #9 0x7f59e288e7ca in r_core_file_do_load_for_io_plugin /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:429:7
+    #10 0x7f59e288ab2e in r_core_bin_load /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:552:4
+    #11 0x56388764a05f in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:916:14
+    #12 0x7f59db0d93f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xc0364) in __asan_memcpy
+Shadow bytes around the buggy address:
+  0x0c587fffaf00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c587fffaf10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c587fffaf20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c587fffaf30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c587fffaf40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c587fffaf50: 00 00 00 00 00 00 00 00 00 00 00 00 00[05]fa fa
+  0x0c587fffaf60: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c587fffaf70: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c587fffaf80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c587fffaf90: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c587fffafa0: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==10547==ABORTING
