@@ -1,0 +1,32 @@
+ASAN:DEADLYSIGNAL
+=================================================================
+==13764==ERROR: AddressSanitizer: SEGV on unknown address 0x7f01b81a72a2 (pc 0x7f013be1bd49 bp 0x7ffca04cf3e0 sp 0x7ffca04cf3c0 T0)
+==13764==The signal is caused by a READ memory access.
+    #0 0x7f013be1bd48 in getRegisterName /home/mtowalski/Fuzzing/Programs/radare2/shlr/capstone/arch/Sparc/SparcGenAsmWriter.inc:1205:18
+    #1 0x7f013be1bc31 in printRegName /home/mtowalski/Fuzzing/Programs/radare2/shlr/capstone/arch/Sparc/SparcInstPrinter.c:96:22
+    #2 0x7f013be19e3c in printOperand /home/mtowalski/Fuzzing/Programs/radare2/shlr/capstone/arch/Sparc/SparcInstPrinter.c:173:3
+    #3 0x7f013be18c0b in printInstruction /home/mtowalski/Fuzzing/Programs/radare2/shlr/capstone/arch/Sparc/SparcGenAsmWriter.inc:851:5
+    #4 0x7f013bdebf85 in Sparc_printInst /home/mtowalski/Fuzzing/Programs/radare2/shlr/capstone/arch/Sparc/SparcInstPrinter.c:445:4
+    #5 0x7f013bbdfbc6 in cs_disasm /home/mtowalski/Fuzzing/Programs/radare2/shlr/capstone/cs.c:664:4
+    #6 0x7f013ba2fd18 in analop /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/anal/p/anal_sparc_cs.c:45:6
+    #7 0x7f013bad1940 in r_anal_op /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/op.c:104:9
+    #8 0x7f013badecb0 in fcn_recurse /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/fcn.c:608:16
+    #9 0x7f013badcbf0 in r_anal_fcn /home/mtowalski/Fuzzing/Programs/radare2/libr/anal/fcn.c:1208:8
+    #10 0x7f013e2d0af3 in core_anal_fcn /home/mtowalski/Fuzzing/Programs/radare2/libr/core/canal.c:507:12
+    #11 0x7f013e2cfaef in r_core_anal_fcn /home/mtowalski/Fuzzing/Programs/radare2/libr/core/canal.c:1410:9
+    #12 0x7f013e13f0d2 in _anal_calls /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:3614:6
+    #13 0x7f013e13a950 in cmd_anal_calls /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:3678:5
+    #14 0x7f013e1226b3 in cmd_anal_all /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:5236:12
+    #15 0x7f013e08853d in cmd_anal /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:5552:8
+    #16 0x7f013e2c0342 in r_cmd_call /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd_api.c:226:10
+    #17 0x7f013e103d48 in r_core_cmd_subst_i /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2111:16
+    #18 0x7f013e0812d1 in r_core_cmd_subst /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:1341:9
+    #19 0x7f013e0796ae in r_core_cmd /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2685:9
+    #20 0x7f013e054bbc in r_core_cmd0 /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2831:9
+    #21 0x55a9701962b6 in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:1114:11
+    #22 0x7f0136a123f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+    #23 0x55a9700a11a9 in _start (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x211a9)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /home/mtowalski/Fuzzing/Programs/radare2/shlr/capstone/arch/Sparc/SparcGenAsmWriter.inc:1205:18 in getRegisterName
+==13764==ABORTING

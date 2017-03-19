@@ -1,0 +1,56 @@
+==30739==ERROR: AddressSanitizer: global-buffer-overflow on address 0x7f5f4ec82b82 at pc 0x56008a7d32f5 bp 0x7fff5373a730 sp 0x7fff53739ee0
+READ of size 4 at 0x7f5f4ec82b82 thread T0
+    #0 0x56008a7d32f4 in __asan_memcpy (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xc02f4)
+    #1 0x7f5f4da9398c in sh_buffer_read_memory /home/mtowalski/Fuzzing/Programs/radare2/libr/asm/p/asm_sh.c:18:2
+    #2 0x7f5f4da9708e in print_insn_shx /home/mtowalski/Fuzzing/Programs/radare2/libr/asm/p/../arch/sh/gnu/sh-dis.c:338:13
+    #3 0x7f5f4da97613 in print_insn_shb /home/mtowalski/Fuzzing/Programs/radare2/libr/asm/p/../arch/sh/gnu/sh-dis.c:381:7
+    #4 0x7f5f4da936dd in disassemble /home/mtowalski/Fuzzing/Programs/radare2/libr/asm/p/asm_sh.c:78:14
+    #5 0x7f5f4dbb1e7c in r_asm_disassemble /home/mtowalski/Fuzzing/Programs/radare2/libr/asm/asm.c:387:9
+    #6 0x7f5f5281d033 in r_core_anal_op /home/mtowalski/Fuzzing/Programs/radare2/libr/core/canal.c:744:6
+    #7 0x7f5f5282c7ea in fcn_callconv /home/mtowalski/Fuzzing/Programs/radare2/libr/core/canal.c:2269:9
+    #8 0x7f5f52837544 in r_core_anal_all /home/mtowalski/Fuzzing/Programs/radare2/libr/core/canal.c:2801:5
+    #9 0x7f5f52674d6b in cmd_anal_all /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:5197:4
+    #10 0x7f5f525db53d in cmd_anal /home/mtowalski/Fuzzing/Programs/radare2/libr/core/./cmd_anal.c:5552:8
+    #11 0x7f5f52813342 in r_cmd_call /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd_api.c:226:10
+    #12 0x7f5f52656d48 in r_core_cmd_subst_i /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2111:16
+    #13 0x7f5f525d42d1 in r_core_cmd_subst /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:1341:9
+    #14 0x7f5f525cc6ae in r_core_cmd /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2685:9
+    #15 0x7f5f525a7bbc in r_core_cmd0 /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cmd.c:2831:9
+    #16 0x56008a8292b6 in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:1114:11
+    #17 0x7f5f4af653f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+    #18 0x56008a7341a9 in _start (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x211a9)
+
+0x7f5f4ec82b82 is located 0 bytes to the right of global variable 'bytes' defined in 'p/asm_sh.c:14:22' (0x7f5f4ec82b80) of size 2
+SUMMARY: AddressSanitizer: global-buffer-overflow (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xc02f4) in __asan_memcpy
+Shadow bytes around the buggy address:
+  0x0fec69d88520: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0fec69d88530: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0fec69d88540: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0fec69d88550: 00 00 00 00 00 00 00 00 00 f9 f9 f9 f9 f9 f9 f9
+  0x0fec69d88560: 00 f9 f9 f9 f9 f9 f9 f9 00 f9 f9 f9 f9 f9 f9 f9
+=>0x0fec69d88570:[02]f9 f9 f9 f9 f9 f9 f9 00 00 00 00 00 00 00 00
+  0x0fec69d88580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0fec69d88590: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0fec69d885a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0fec69d885b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0fec69d885c0: 00 f9 f9 f9 f9 f9 f9 f9 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==30739==ABORTING

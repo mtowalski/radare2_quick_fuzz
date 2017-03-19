@@ -1,0 +1,25 @@
+==14659==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7facfd6fc187 bp 0x7fff68ec73d0 sp 0x7fff68ec7300 T0)
+==14659==The signal is caused by a READ memory access.
+==14659==Hint: address points to the zero page.
+    #0 0x7facfd6fc186 in r_x509_parse_algorithmidentifier /home/mtowalski/Fuzzing/Programs/radare2/libr/util/r_x509.c:42:6
+    #1 0x7facfd6f434e in r_pkcs7_parse_digestalgorithmidentifier /home/mtowalski/Fuzzing/Programs/radare2/libr/util/r_pkcs7.c:91:5
+    #2 0x7facfd6f6f41 in r_pkcs7_parse_signeddata /home/mtowalski/Fuzzing/Programs/radare2/libr/util/r_pkcs7.c:247:2
+    #3 0x7facfd6f7d80 in r_pkcs7_parse_cms /home/mtowalski/Fuzzing/Programs/radare2/libr/util/r_pkcs7.c:293:2
+    #4 0x7fad02cbd05a in bin_pe_get_certificate /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2121:8
+    #5 0x7fad02cad360 in bin_pe_init /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/pe/pe.c:2162:2
+    #6 0x7fad02cad7af in Pe32_r_bin_pe_new_buf /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/../format/pe/pe.c:3180:7
+    #7 0x7fad02c8435b in load_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/..//libr/bin/p/bin_pe.c:27:8
+    #8 0x7fad02a7e0bb in r_bin_object_new /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1203:16
+    #9 0x7fad02a7b889 in r_bin_file_new_from_bytes /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:1428:6
+    #10 0x7fad02a7a6a0 in r_bin_load_io_at_offset_as_sz /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:974:13
+    #11 0x7fad02a76ac0 in r_bin_load_io_at_offset_as /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:988:12
+    #12 0x7fad02a7665a in r_bin_load_io /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/bin.c:831:9
+    #13 0x7fad03dfa52a in r_core_file_do_load_for_io_plugin /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:429:7
+    #14 0x7fad03df688e in r_core_bin_load /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:552:4
+    #15 0x55d1b8deafef in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:915:14
+    #16 0x7facfc61c3f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+    #17 0x55d1b8cf81a9 in _start (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x211a9)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV /home/mtowalski/Fuzzing/Programs/radare2/libr/util/r_x509.c:42:6 in r_x509_parse_algorithmidentifier
+==14659==ABORTING

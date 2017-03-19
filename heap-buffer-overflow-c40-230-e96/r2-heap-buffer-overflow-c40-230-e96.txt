@@ -1,0 +1,62 @@
+=================================================================
+==22637==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6100000009fb at pc 0x558fb0e77c41 bp 0x7ffe80c692c0 sp 0x7ffe80c68a70
+READ of size 15 at 0x6100000009fb thread T0
+    #0 0x558fb0e77c40 in __interceptor_strdup (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x65c40)
+    #1 0x7fd56cda8230 in r_bin_dwarf_parse_attr_value /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/dwarf.c:1211:40
+    #2 0x7fd56cd9de96 in r_bin_dwarf_parse_comp_unit /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/dwarf.c:1289:10
+    #3 0x7fd56cd9c6c5 in r_bin_dwarf_parse_info_raw /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/dwarf.c:1353:9
+    #4 0x7fd56cd9fa19 in r_bin_dwarf_parse_info /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/dwarf.c:1479:9
+    #5 0x7fd56e18c47e in bin_dwarf /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cbin.c:769:4
+    #6 0x7fd56e185a00 in r_core_bin_info /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cbin.c:2730:46
+    #7 0x7fd56e1854d5 in r_core_bin_set_env /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cbin.c:109:3
+    #8 0x7fd56e0f15ad in r_core_file_do_load_for_io_plugin /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:434:2
+    #9 0x7fd56e0ed88e in r_core_bin_load /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:552:4
+    #10 0x558fb0f25fef in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:915:14
+    #11 0x7fd5669133f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+    #12 0x558fb0e331a9 in _start (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x211a9)
+
+0x6100000009fb is located 0 bytes to the right of 187-byte region [0x610000000940,0x6100000009fb)
+allocated by thread T0 here:
+    #0 0x558fb0ee8d80 in calloc (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0xd6d80)
+    #1 0x7fd56cd9f6ed in r_bin_dwarf_parse_info /home/mtowalski/Fuzzing/Programs/radare2/libr/bin/dwarf.c:1457:20
+    #2 0x7fd56e18c47e in bin_dwarf /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cbin.c:769:4
+    #3 0x7fd56e185a00 in r_core_bin_info /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cbin.c:2730:46
+    #4 0x7fd56e1854d5 in r_core_bin_set_env /home/mtowalski/Fuzzing/Programs/radare2/libr/core/cbin.c:109:3
+    #5 0x7fd56e0f15ad in r_core_file_do_load_for_io_plugin /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:434:2
+    #6 0x7fd56e0ed88e in r_core_bin_load /home/mtowalski/Fuzzing/Programs/radare2/libr/core/file.c:552:4
+    #7 0x558fb0f25fef in main /home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2.c:915:14
+    #8 0x7fd5669133f0 in __libc_start_main /build/glibc-jxM2Ev/glibc-2.24/csu/../csu/libc-start.c:291
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/mtowalski/Fuzzing/Programs/radare2/binr/radare2/radare2+0x65c40) in __interceptor_strdup
+Shadow bytes around the buggy address:
+  0x0c207fff80e0: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+  0x0c207fff80f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c207fff8100: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+  0x0c207fff8110: fd fd fd fd fd fd fd fd fd fd fd fd fd fd fd fa
+  0x0c207fff8120: fa fa fa fa fa fa fa fa 00 00 00 00 00 00 00 00
+=>0x0c207fff8130: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00[03]
+  0x0c207fff8140: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c207fff8150: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c207fff8160: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c207fff8170: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c207fff8180: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==22637==ABORTING
